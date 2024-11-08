@@ -16,7 +16,8 @@
 .container {
     max-width: 100%;
     width: 1158px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
@@ -121,6 +122,7 @@ img {
 }
 
 .nav-list a {
+    padding: 24px 0;
     color: var(--color-dark);
     text-decoration: none;
 }
@@ -229,14 +231,17 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    flex-basis: calc((100% - 48px) / 3);;
 }
 
-.project-item {
+.project-item-content {
     padding: 32px 16px;
     border: 1px solid var(--color-accent);
     border-top: none;
     background-color: var(--color-white-background);
+}
+
+.project-item {
+    width: calc((100% - 48px) / 3);
 }
 
 .project-item h3 {
